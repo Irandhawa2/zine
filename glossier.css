@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b7abab; /* same neutral background for brand consistency */
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.product-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.caption {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.info-list {
+  list-style-type: disc;
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Optional subtle Glossier-style touch: slightly softer tone */
+h1 {
+  color: #1b1b1b; /* rich black for contrast */
+}
+
+.caption, .info-list {
+  color: #333;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .info-list {
+    font-size: 0.95rem;
+  }
+}
