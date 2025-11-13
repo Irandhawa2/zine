@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('images/back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #5b2a77;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overlay {
+  background-color: rgba(220, 169, 196, 0.6);
+  padding: 60px 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 0.4em 0;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #7a3a8d;
+  margin: 0 0 1.5em 0;
+  line-height: 1.4;
+}
+
+/* --- Next button styling --- */
+.next-btn {
+  display: inline-block;
+  background-color: #7a3a8d; /* plum purple */
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.next-btn:hover {
+  background-color: #a85ac7; /* lighter purple on hover */
+  transform: scale(1.05);
+}
+
+/* Adjust for small screens */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #b7abab; /* same neutral background for brand consistency */
+  background-color: #b7abab; /* soft taupe/grey background */
   font-family: 'Poppins', sans-serif;
   color: black;
   text-align: center;
 }
+/* Position Next button centered under the content */
 .next-btn {
   display: inline-block;
   background-color: #7a3a8d; /* plum purple */
@@ -33,6 +34,7 @@ body {
 }
 
 
+
 main {
   padding: 40px 20px;
   max-width: 400px;
@@ -40,10 +42,10 @@ main {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 100;
   font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
@@ -70,16 +72,7 @@ h1 {
   line-height: 1.8;
 }
 
-/* Optional subtle Glossier-style touch: slightly softer tone */
-h1 {
-  color: #1b1b1b; /* rich black for contrast */
-}
-
-.caption, .info-list {
-  color: #333;
-}
-
-/* Mobile-friendly adjustments */
+/* Optional mobile tweak */
 @media (max-width: 500px) {
   h1 {
     font-size: 2.4rem;
