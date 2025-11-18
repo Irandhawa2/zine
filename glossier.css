@@ -69,6 +69,75 @@ h1 {
   font-size: 1rem;
   line-height: 1.8;
 }
+.info-list li {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.info-list {
+  list-style: none;     
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+  max-width: 360px;
+}
+
+.info-list li {
+  position: relative;
+  padding-left: 14px;    
+  margin-bottom: 18px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.info-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: 85%;
+  width: 3px;
+  background-color: #7a3a8d; /* plum purple accent */
+  border-radius: 6px;
+}
+
+/* make the "History:", "Founder:" part look like a header */
+.info-list li strong {
+  font-family: 'Playfair Display', serif;
+  color: #7a3a8d;
+  font-size: 1.05rem;
+  letter-spacing: 0.3px;
+  display: block;
+  margin-bottom: 3px;
+}
+.info-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  height: 0;
+  width: 3px;
+  background-color: #7a3a8d;
+  border-radius: 6px;
+  transition: height 0.3s ease;
+}
+
+.info-list li:hover::before {
+  height: 90%;
+}
+
+.info-list li {
+  transition: all 0.3s ease;
+}
+
+.info-list li:hover {
+  background-color: rgba(122, 58, 141, 0.08); /* soft plum tint */
+  padding-left: 18px; /* slight indent on hover */
+  border-radius: 6px;
+}
+
+
+
 
 /* Optional subtle Glossier-style touch: slightly softer tone */
 h1 {
