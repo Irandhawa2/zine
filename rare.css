@@ -6,10 +6,20 @@ body {
   color: black;
   text-align: center;
 }
-/* Position Next button centered under the content */
+/* Button container holds BOTH buttons */
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  /* pushes one button left, one right */
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Shared button style */
+.back-btn,
 .next-btn {
   display: inline-block;
-  background-color: #7a3a8d; /* plum purple */
+  background-color: #7a3a8d;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -17,47 +27,15 @@ body {
   border-radius: 30px;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
-
-  /* NEW positioning */
-  margin-top: 30px; /* space above the button */
-  text-align: center;
 }
 
-/* Center the button container */
-.button-container {
-  text-align: center;
-}
-
+/* Hover effect */
+.back-btn:hover,
 .next-btn:hover {
-  background-color: #a85ac7; /* lighter purple on hover */
+  background-color: #a85ac7;
   transform: scale(1.05);
 }
 
-.back-btn {
-   display: inline-block;
-  background-color: #7a3a8d; /* plum purple */
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 10px 24px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  font-family: 'Poppins', sans-serif;
-
-  /* NEW positioning */
-  margin-top: 30px; /* space above the button */
-  text-align: right center;
-}
-
-/* Center the button container */
-.button-container {
-  text-align: right center;
-}
-
-.back-btn:hover {
-  background-color: #a85ac7; /* lighter purple on hover */
-  transform: scale(1.05);
-}
 
 main {
   padding: 40px 20px;
