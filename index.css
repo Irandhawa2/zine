@@ -56,6 +56,62 @@ p {
   background-color: #a85ac7; /* lighter purple on hover */
   transform: scale(1.05);
 }
+/* --- Floating Makeup Particles --- */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* prevents blocking clicks */
+  overflow: hidden;
+}
+
+/* Container */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Base particle styling */
+.particle {
+  position: absolute;
+  opacity: 0.8;
+  animation: floatUp linear infinite;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+/* LEFT SIDE */
+.p1 { left: 3%; width: 40px; animation-duration: 12s; }
+.p2 { left: 5%; width: 38px; animation-duration: 14s; }
+.p3 { left: 8%; width: 35px; animation-duration: 18s; }
+
+/* RIGHT SIDE — must use *left* NOT right if animation fails */
+.p4 { left: 92%; width: 50px; animation-duration: 16s; }
+.p5 { left: 95%; width: 38px; animation-duration: 10s; }
+.p6 { left: 90%; width: 60px; animation-duration: 20s; }
+
+/* Float animation (THIS is what makes them move) */
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  20% { opacity: 0.8; }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+
+
 
 /* Adjust for small screens */
 @media (max-width: 500px) {
